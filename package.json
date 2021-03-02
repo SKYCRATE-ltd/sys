@@ -1,0 +1,20 @@
+{
+  "name": "sys",
+  "version": "1.0.0",
+  "description": "system calls made easy peasy lemon squeezy",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKYCRATE-ltd/sys.git"
+  },
+  "author": "Graham Robertson | SKYCRATE LTD",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SKYCRATE-ltd/sys/issues"
+  },
+  "homepage": "https://github.com/SKYCRATE-ltd/sys#readme"
+}
