@@ -11,6 +11,16 @@ import {
 
 const encoding = "utf-8";
 
+export function truncate(line, delim) {
+	return line.substring(
+		0,
+		Math.max(
+			0,
+			line.lastIndexOf(delim)
+		) || undefined
+	).trim();
+}
+
 export function parent_dir(path) {
 	if (path.endsWith('/'))
 		path = path.substring(0, path.length - 1);
@@ -70,4 +80,5 @@ export function readlines(file, _comment = '#') {
 			.map(line => line.trim())
 			.filter(line => line)
 			.filter(line => !line.startsWith(_comment))
+			.map(line => truncate(line, _comment))
 }
